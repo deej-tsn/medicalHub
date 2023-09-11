@@ -3,9 +3,9 @@ A platform for more direct information collect completed by users regarding the 
 
 ## Stack:
 
-- Database - PostgreSQL
-- Backend - Spring Boot ( Java )
+- Database - MongoDB
+- Backend - Express, NodeJS
 - Frontend:
-  - Website ( Either Express or NextJS )
+  - Website - React
   - Future App
 
