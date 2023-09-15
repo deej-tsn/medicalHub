@@ -5,31 +5,32 @@ const router = express.Router();
 
 // Getting All
 
-router.get('/',(req, res) => {
+router.get('/',(req : any , res : any) => {
     res.send('Hello World');
+
 });
 
 // Getting One
 
-router.get('/:id', (req, res) => {
+router.get('/:id', (req : any , res : any) => {
     req.params.id
 });
 
 // Creating One
 
-router.post('/', (req,res) => {
+router.post('/', (req : any , res : any) => {
 
 });
 
 // Updating One
 
-router.patch('/', (req, res) => {
+router.patch('/', (req : any , res : any) => {
 
 });
 
 // Deleting One 
 
-router.delete('/:id', (req,res) => {
+router.delete('/:id', (req : any , res : any) => {
 
 });
 
