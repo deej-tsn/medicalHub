@@ -1,1 +1,16 @@
-GET http://localhost:8080/trigger
+GET http://localhost:8080/users/
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "first_name":"test",
+    "second_name": "test2",
+    "email" : "guess",
+    "password_hash" : "testing"
+}
+
+###
+
+DELETE  http://localhost:8080/users/65086289c7e9e12a900ea6df
