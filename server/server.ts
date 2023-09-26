@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const jwt = require('./utils/jwt');
 
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
@@ -25,8 +26,8 @@ app.use('/triggers', triggersRouter);
 
 // ROUTES
 
-app.get("/api/home", (req : any, res : any) => {
-    res.json({message: "Allie"});
+app.get("/", jwt.authenticateToken, (req : any, res : any) => {
+    res.send(res.user);
 });
 
 app.listen(PORT, () => {

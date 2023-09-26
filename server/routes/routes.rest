@@ -1,16 +1,16 @@
 GET http://localhost:8080/users/
 ###
 
-POST http://localhost:8080/users
+POST http://localhost:8080/users/
 Content-Type: application/json
 
 {
-    "first_name":"test",
-    "second_name": "test2",
-    "email" : "guess",
-    "password_hash" : "testing"
+    "first_name":"dempsey",
+    "second_name": "palacio tascon",
+    "email" : "dempsey.2001@hotmail.com",
+    "password" : "testing"
 }
 
 ###
 
-DELETE  http://localhost:8080/users/65086289c7e9e12a900ea6df
+DELETE  http://localhost:8080/users/6508d12ed3c75549c4bb2d92
